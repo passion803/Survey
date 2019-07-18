@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+    <!-- 請定義問券名稱 -->
+    <title>20190716_html5_hw</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        /* 樣式描繪要在style裡面 */
+
+        .opname {
+            width: 200px;
+            color: black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HTML5 新增了許多 <input> 的型態，請使用這些type，設計一份問卷 -->
+    <!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+
+    <!-- 如果不知道該怎麼下手，請參考這個網站所設計的情境問卷找靈感 -->
+    <!-- https://technews.tw/2018/10/18/surveycake-situation-list/ -->
+
+    <!-- 底下是作業需要包含的項目 -->
+    <!-- 1. 問卷需包含 5-7 個問題 -->
+    <!-- 2. type 挑選時，請盡量不重複 -->
+    <form>
+        <ol>
+            <div>
+                <img src="聚餐.png" alt="">
+                <h3>謝師宴日期與地點票選_Template</h3>
+                <strong>在畢業之際，把握能與同學相聚的機會，同時感謝四年來系上每位師長的諄諄教誨，我們將舉辦謝師宴活動</strong>
+                <br>
+                <h5><em>本次表單為票選謝師宴活動日期及地點，請同學於下方表單投票選擇適合日期及餐廳，預估每位同學補助餐費約100元上下，金額會依參加人數增減平分</em></h5>
+                <br>
+            </div>
+            <br>
+            <div>
+                <li><label for="user_name">哈囉，請問你是哪位同學？</label></li>
+                <input type="text" name="user_name id" id="user_name">
+            </div>
+            <br>
+            <div>
+                <li><label for="user_number">請填入您的學號</label></li>
+                <input type="text" name="user_number id" id="user_number">
+            </div>
+            <br>
+            <div>
+                <li><label for="user_phone">請填入您的連絡電話</label></li>
+                <input type="tel" name="user_phone id" id="user_phone">
+            </div>
+            <br>
+            <div>
+                <li><label for="user_phone">謝師宴預計辦在08/03和08/04的晚餐時段，這其中你可以參加的時間為？</label></li>
+                <input type="radio" name="date" id="">
+                08/03 (六)
+                <br>
+                <input type="radio" name="date" id="">
+                08/04 (日)
+                <br>
+                <input type="radio" name="date" id="">
+                兩天都可以
+            </div>
+            <br>
+            <div>
+                <li><label for="user_phone">請票選出想吃的餐廳吧!(複選)</label></li>
+                <h6>點擊圖片可至官網查看</h6>
+                <table>
+                    <tr>
+                        <td class="opname"><input type="checkbox" name="vehicle" id="">鼎王麻辣鍋(公益店)</td>
+                        <td class="opname"><input type="checkbox" name="vehicle" id="">茶六燒肉堂(公益店)</td>
+                        <td class="opname"><input type="checkbox" name="vehicle" id="">NINI尼尼義大利餐廳(公益店)</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.tripodking.com.tw/"><img src="hot-pot.png" alt=""
+                                    style="width:100px;height:100px;"></a></td>
+                        <td><a href="https://www.facebook.com/chaliuyakiniku/"><img src="meat.png" alt=""
+                                    style="width:100px;height:100px;"></a></td>
+                        <td><a href="https://www.facebook.com/ninirestaurant/"><img src="pizza-slice.png" alt=""
+                                    style="width:100px;height:100px;"></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </ol>
+
+    </form>
+
+
+
+</body>
+
+</html>
